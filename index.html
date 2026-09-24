@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LF SubBot | ربط واتساب</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid"></div>
+    </div>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div class="logo">
+                <span>LF</span>
+            </div>
+
+            <div>
+                <h1>LF SubBot</h1>
+                <p>ربط حساب واتساب الخاص بك</p>
+            </div>
+
+            <div class="online">
+                <span></span>
+                النظام يعمل
+            </div>
+
+        </header>
+
+
+        <section class="hero">
+
+            <div class="badge">
+                ⚡ ربط سريع وآمن
+            </div>
+
+            <h2>
+                اربط واتسابك
+                <br>
+                <strong>بسهولة.</strong>
+            </h2>
+
+            <p class="description">
+                أدخل رقم واتساب الخاص بك للحصول على
+                رمز الربط وإضافة حسابك إلى نظام SubBot.
+            </p>
+
+        </section>
+
+
+        <section class="card">
+
+            <div class="card-title">
+                <div class="icon">📱</div>
+
+                <div>
+                    <h3>ربط حساب واتساب</h3>
+                    <p>أدخل الرقم المرتبط بحساب واتساب</p>
+                </div>
+            </div>
+
+
+            <label for="phone">رقم الهاتف</label>
+
+            <div class="phone-box">
+
+                <button
+                    type="button"
+                    id="countryButton"
+                    class="country"
+                    aria-label="اختيار الدولة"
+                >
+                    <span id="countryFlag">🇸🇦</span>
+                    <span id="countryCode">+966</span>
+                    <span class="country-arrow">⌄</span>
+                </button>
+
+                <input
+                    id="phone"
+                    type="tel"
+                    inputmode="numeric"
+                    placeholder="رقم الهاتف"
+                    autocomplete="tel"
+                >
+
+            </div>
+
+            <div id="countryPicker" class="country-picker hidden">
+
+                <div class="country-search">
+                    <span>⌕</span>
+
+                    <input
+                        id="countrySearch"
+                        type="search"
+                        placeholder="ابحث عن الدولة أو رمز الاتصال..."
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div
+                    id="countryList"
+                    class="country-list"
+                ></div>
+
+            </div>
+
+            <div class="hint">
+                مثال: 512345678
+            </div>
+
+
+            <button id="pairBtn">
+
+                <span id="buttonText">
+                    طلب كود الربط
+                </span>
+
+                <span id="buttonLoader" class="loader hidden"></span>
+
+            </button>
+
+
+            <div id="message" class="message hidden"></div>
+
+
+            <div id="pairResult" class="pair-result hidden">
+
+                <div class="result-icon">
+                    🔑
+                </div>
+
+                <p class="result-label">
+                    كود الربط الخاص بك
+                </p>
+
+                <div id="pairCode" class="pair-code">
+                    ----
+                </div>
+
+                <button id="copyBtn" class="copy-btn">
+                    نسخ الكود
+                </button>
+
+                <div class="instructions">
+
+                    <div>1</div>
+                    <p>
+                        افتح واتساب في هاتفك
+                    </p>
+
+                    <div>2</div>
+                    <p>
+                        الإعدادات ← الأجهزة المرتبطة
+                    </p>
+
+                    <div>3</div>
+                    <p>
+                        اختر «ربط جهاز» ثم «الربط برقم الهاتف»
+                    </p>
+
+                    <div>4</div>
+                    <p>
+                        أدخل الكود الظاهر أعلاه
+                    </p>
+
+                </div>
+
+                <div id="connectionStatus" class="connection-status">
+                    <span></span>
+                    في انتظار إكمال الربط...
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="features">
+
+            <div class="feature">
+                <div>⚡</div>
+                <strong>سريع</strong>
+                <span>كود الربط يظهر خلال ثوانٍ</span>
+            </div>
+
+            <div class="feature">
+                <div>🔒</div>
+                <strong>آمن</strong>
+                <span>لا نطلب كلمة مرور واتساب</span>
+            </div>
+
+            <div class="feature">
+                <div>🤖</div>
+                <strong>SubBot</strong>
+                <span>تشغيل الحساب تلقائيًا</span>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <span>LF SubBot</span>
+            <span>•</span>
+            <span>WhatsApp Connection</span>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
