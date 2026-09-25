@@ -3,7 +3,7 @@
  *
  * أثناء الاختبار المحلي:
  */
-const API_URL = 'https://soonest-separated-contacts-from.trycloudflare.com';
+const API_URL = 'https://simpson-reduced-counts-aug.trycloudflare.com';
 
 
 const phoneInput = document.getElementById('phone');
