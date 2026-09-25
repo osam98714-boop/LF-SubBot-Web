@@ -3,7 +3,7 @@
  *
  * أثناء الاختبار المحلي:
  */
-const API_URL = 'https://simpson-reduced-counts-aug.trycloudflare.com';
+const API_URL = 'https://charlie-milwaukee-possibilities-administrator.trycloudflare.com';
 
 
 const phoneInput = document.getElementById('phone');
