@@ -3,7 +3,7 @@
  *
  * أثناء الاختبار المحلي:
  */
-const API_URL = 'http://127.0.0.1:3000';
+const API_URL = 'https://soonest-separated-contacts-from.trycloudflare.com';
 
 
 const phoneInput = document.getElementById('phone');
